@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Model</title>
+</head>
+<style>
+    .utama {
+        width: 60vw;
+        height: 90vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header {
+        background-color: aqua;
+        flex-basis: 15%;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navigation {
+        flex-basis: 10%;
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navigation div {
+        background-color: greenyellow;
+        width: 20%;
+    }
+    
+    .content {
+        flex-basis: 55%;
+        margin: 10px;
+        display: flex;
+    }
+    
+    .sidebar {
+        background-color: gray;
+        flex-basis: 25%;
+        margin: 10px;
+    }
+    
+    .sidebar2 {
+        background-color: darkcyan;
+        flex-basis: 25%;
+        margin: 10px;
+    }
+    
+    .middle {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .middle-top {
+        flex-basis: 50%;
+        background-color: sandybrown;
+        margin-bottom: 10px;
+    }
+    
+    .middle-bot {
+        flex-basis: 50%;
+        margin-top: 10px;
+        display: flex;
+    }
+    
+    .content2 {
+        background-color: blueviolet;
+        flex-basis: 50%;
+        margin-right: 10px;
+    }
+    
+    .content3 {
+        background-color: pink;
+        flex-basis: 50%;
+        margin-left: 10px;
+    }
+    
+    .footer {
+        background-color: darkkhaki;
+        flex-basis: 20%;
+        margin: 10px;
+    }
+    
+    .header,
+    .navigation div,
+    .sidebar,
+    .sidebar2,
+    .middle-top,
+    .middle-bot div,
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="utama">
+        <div class="header">Header</div>
+        <div class="navigation">
+            <div class="nav1">nav-1</div>
+            <div class="nav2">nav-2</div>
+            <div class="nav3">nav-3</div>
+            <div class="nav4">nav-4</div>
+        </div>
+        <div class="content">
+            <div class="sidebar">sidebar</div>
+            <div class="middle">
+                <div class="middle-top">content 1</div>
+                <div class="middle-bot">
+                    <div class="content2">content_2</div>
+                    <div class="content3">content_3</div>
+                </div>
+            </div>
+            <div class="sidebar2">sidebar2</div>
+        </div>
+        <div class=" footer ">Footer</div>
+    </div>
+
+</body>
+
+</html>
